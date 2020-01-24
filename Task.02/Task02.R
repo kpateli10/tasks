@@ -47,8 +47,3 @@ source("http://jonsmitchell.com/code/plotFxn02b.R")
 unique(beren3$event)
 
 
-
-
-
-
-

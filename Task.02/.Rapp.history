@@ -1,77 +1,3 @@
-ls()
-list.files()
-file.exists("mytest.R")
-file.info("mytest.R")
-file.rename("mytest2.R")
-file.rename("mytest.R")
-file.rename("mytest.R") to "mytest2.R"
-file.rename("mytest2.R")
-file.rename("mytest.R") to file.rename("mytest2.R")
-file.rename("mytest.R" , "mytest2.R")
-file.copy("mytest2.R" , " mytest3.R")
-file.copy("mytest2.R", "mytest3.R")
-file.path("mytest3.R")
-file.path('folder1' , 'folder2')
-?dir.create
-dir.create("testdir2") , file.path("testdir3")
-dir.create(file.path("testdir.2" , "testdir.3"))
-dir.create(file.path('testdir2', 'testdir3'), recursive = TRUE)
-setwd()
-detwd(old.dir)
-setwd(old.dir)
-bye()
-swirl()
-1:20
-pi:10
-15:1
-':'
-?':'
-seq(1, 20)
-seq(0, 10, by=0.5)
-seq(5, 10, length=30)
-my_seq <- seq(5, 10, length=30)
-length(my_seq)
-1:length(my_seq)
-seq(along,with = my_seq)
-seq(along.with = my_seq)
-seq_along(my_seq)
-rep(o, times=40)
-rep(0, times=40)
-rep(c(0, 1, 2), times = 10)
-rep(c(0, 1, 2), each = 10)
-x <- c(44, NA, 5, NA)
-x * 3
-y <- rnorm(1000)
-z <- rep(NA, 1000)
-my_data <- sample(c(y,z), 100)
-is.na()
-my_na <- is.na()
-my_na <- is.na(my_data)
-my_na
-my_data == NA
-sum(my_na, TRUEs)
-sum(my_na)
-my_data
-0/0
-Inf - Inf
-x
-x[1:10]
-x[is.na(x)]
-y <- x[!is.na(x)]
-y
-y[y > 0]
-x[x > 0]
-x[!is.na(x) & x > 0]
-c(0, 1, 2) & x[1:10]
-[c(3, 5, 7)]
-x[c(3, 5, 7)]
-x[0]
-x[c(3000)]
-x[3000]
-x[c(-2, -10)]
-x[-c(2,10)]
-vect <- c(foo = 11, bar = 2, norf = NA)
-vect
 names(vect)
 c(11, 2, NA)
 vect2 <- c(11, 2, NA)
@@ -237,7 +163,6 @@ boxplot(formula = mpg~ cyl, data =mtcars)
 hist(mtcars$mpg)
 setwd("~/Desktop/Evolution/Programming/Task.02")
 Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)
-Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)
 length(Data)
 nrow(Data)
 ncol(Data)
@@ -258,3 +183,185 @@ head(Data)
 beren2 <- Data
 beren3 <- beren2[order(beren2$age),]
 write.csv(beren3, "beren_new.csv", quote=F, row.names=FALSE)
+Naps <- which(beren3$event == "nap")
+Naps <- which(Data$event == "nap")
+setwd("~/Desktop/Evolution/Programming/Task.02")#
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+Feeds <- which(Data[,9] == "bottle")#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, "event"] == "bottle")#
+Feeds <- which(Data$event == "bottle")#
+dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event =="birth")]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age),]#
+write.csv(beren3, "beren_new.csv", quote=F, row.names=FALSE)
+Naps <- which(Data$event == "nap")
+beren4 <- beren3[order(beren3$nap),]
+beren3 <- Data
+beren4 <- beren3[order(beren3$nap)]
+setwd("~/Desktop/Evolution/Programming/Task.02")#
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+Feeds <- which(Data[,9] == "bottle")#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, "event"] == "bottle")#
+Feeds <- which(Data$event == "bottle")#
+dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event =="birth")]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age),]
+Naps<- which(Data$event =="nap")
+berenNaps <- Data[Naps,]
+head(berenNaps)
+Naps <- which(Data$event == "nap")
+beren4 <- beren3[order(beren3$nap),]
+head(Data)
+beren3 <-Data
+beren4 <- beren3[oder(beren3$nap),]
+beren4 <- beren3[order(beren3$nap),]
+setwd("~/Desktop/Evolution/Programming/Task.02")#
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+Feeds <- which(Data[,9] == "bottle")#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, "event"] == "bottle")#
+Feeds <- which(Data$event == "bottle")#
+dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event =="birth")]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age),]
+Naps <- which(Data$event == "nap")
+berenNaps <- Data[Naps,]
+head(berenNaps)
+Naps <- which(Data$event == "nap")
+head(Data)
+beren3<- Data
+beren4 <- beren3[order(beren3$nap),]
+Naps <- which(Data$event == "nap")#
+berenNaps <- Data[Naps,]
+head(berenNaps)
+dim(berenNaps)
+tail(berenNaps)
+berenNaps$event
+beren4 <- beren3[Naps,]
+head(beren4)
+avgNaps <- tapply (beren4$starttime[Naps], beren4$endtime[Naps])
+avgNaps
+varNaps <- tapply (beren4$starttime[Naps], beren4$endtime[Naps], var)
+avgNaptime <- mean(beren4$value[Naps])
+avgNaps <- tapply (beren4$starttime[Naps], beren4$endtime[Naps])
+avgNaps
+setwd("~/Desktop/Evolution/Programming/Task.02")#
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+Feeds <- which(Data[,9] == "bottle")#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, "event"] == "bottle")#
+Feeds <- which(Data$event == "bottle")#
+dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event =="birth")]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age),]
+Naps <- which(Data$event == "nap")
+berenNaps <- Data[Naps,]
+head(berenNaps)
+dim(berenNaps)
+tail(berenNaps)
+berenNaps$event
+beren4 <- beren3[Naps,]
+head(beren4)
+setwd("~/Desktop/Evolution/Programming/Task.02")#
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+Feeds <- which(Data[,9] == "bottle")#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, "event"] == "bottle")#
+Feeds <- which(Data$event == "bottle")#
+dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event =="birth")]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age),]
+Naps <- which(Data$event == "nap")
+berenNaps <- Data[Naps,]
+head(berenNaps)
+dim(berenNaps)
+tail(berenNaps)
+berenNaps$event
+beren4 <- beren3[Naps,]
+head(beren4)
+head(beren4)
+beren4$start_minute <- beren4$start_minute / 60
+beren4$start_minute <- beren4$start_minute / 60
+beren4$end_minute <- beren4$end_minute / 60
+beren4$startnap <- beren4$start_hour + beren4$start_minute
+beren4$endnap <- beren4$end_hour + beren4$end_minute
+beren4$naplength <- beren4$endnap - beren4$startnap
+totalNaptime<- tapply(beren3$value[Naps], beren3$age[Naps], sum)
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck= -0.01)
+plot(as.numeric(names(totalNaptime)), totalNaptime, type="b", pch=16, xlab="day", ylab="total nap time")
+totalNaptime<- tapply(beren3$day[Naps], beren3$age[Naps], sum)
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck= -0.01)
+plot(as.numeric(names(totalNaptime)), totalNaptime, type="b", pch=16, xlab="day", ylab="total nap time")
+plot(as.numeric(names(totalNaptime)), totalNaptime, type="b", pch=16, xlab="day", ylab="total nap time")
+cor.test(beren4$age, beren4$naplength)
+totalNaptime<- tapply(beren4$day[Naps], beren4$age[Naps], sum)
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck= -0.01)
+plot(as.numeric(names(totalNaptime)), totalNaptime, type="b", pch=16, xlab="day", ylab="total nap time")
+cor.test(beren4$age, beren4$naplength)
