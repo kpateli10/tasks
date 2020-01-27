@@ -1,3 +1,4 @@
+
 #2a
 setwd("~/Desktop/Evolution/Programming/Tasks/Task.02")
 Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)
@@ -22,6 +23,7 @@ head(Data)
 beren2 <- Data
 beren3 <- beren2[order(beren2$age),]
 
+#The hypothesis is that the amount of time he naps varies depending on who his caregiver is.
 #Hypothesis
 KCHcaregiver <- which(Data$caregiver == "kch")
 Rainbowcare <- which(Data$caregiver == "rainbow")
