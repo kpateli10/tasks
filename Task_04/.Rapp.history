@@ -1,0 +1,260 @@
+cor(beren3$value[Feeds], beren3$age[Feeds])
+cor.test(beren3$value[Feeds], beren3$age[Feeds])
+berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])
+summary(berenCor)
+berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])
+boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)" )
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck= -0.01)
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
+abline(h=mean(totalFeed),lty=2, col=`red`)
+abline(h=mean(totalFeed),lty=2, col='red')
+pdf(''r02b-totalMilkByDay.pdf'', height = 4, width = 4)
+pdf("r02b-totalMilkByDay.pdf", height = 4, width = 4)
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days" ylab="ounces of milk")
+plot(as.numeric(names( totalFeed)), totalFeed, type="b", pch=16, xlba="age in days", ylab="ounces of milk")
+abline(h=mean(totalFeed), lty=2, col="red")
+dev.off()
+source("http://jonsmitchell.com/code/plotFxn02b.R")
+unique(beren3$event)
+Naps <- which(beren3$event) == "naps"
+Naps <- which(beren3$event == "nap")
+beren4 <- Data[Naps]
+beren4 <- Data[Naps,]
+head(beren4)
+Naps <- which(Data[,"event"] == "nap")
+dayID <− apply(Data, 1, function(x) paste(x[1:3] , collapse=”−”)) dateID <− sapply(dayID, as.Date, format = ”%Y−%m−%d”, origin = ” 2019−04−18” )
+dayID <− apply(Data, 1, function(x) paste(x[1:3] , collapse=”−”))
+dayID <- apply(Data, 1, function(x) paste(x[1:3] , collapse=”−”))
+dayID <- apply(Data, 1, function(x[1:3] , collapse="-"))
+dayID <- apply(Data, 1, function(x) paste(x[1:3] , collapse="-"))
+dataID <- sapply(dayID, as.Date, format = "%Y-%m-%d" , origin = "2019-04-18")
+avgsleep <- mean (beren4$value[Naps])
+avgNaps <- tapply(beren4$starttime[Naps], beren4$endtime[Naps], mean)
+varFeed <− tapply(beren3$value[Naps], beren3$age[Naps], var)
+varNaps<− tapply(beren3$value[Naps], beren3$age[Naps], var)
+varNaps <− tapply(beren3$value[Naps], beren3$age[Naps], var)
+Naps <- which(Data$event == "nap")
+berenNaps <- Data[Naps,]
+head(berenNaps)
+dim(berenNaps)
+berenNaps$event
+beren4 <- beren3[Naps,]
+head(beren4)
+beren4$start_minute <- beren4$start_minute / 60
+beren4$end_minute <- beren4$end_minute / 60
+beren4$startnap <- beren4$start_hour + beren4$start_minute
+beren4$endnap <- beren4$end_hour + beren4$end_minute
+beren4$naplength <- beren4$endnap - beren4$startnap
+totalNaptime <- beren4$endnap, beren4$age, sum, na.rm=T)
+Naps <- which(Data$event == "nap")
+berenNaps <- Data[Naps,]
+head(berenNaps)
+dim(berenNaps)
+tail(berenNaps)
+berenNaps$event
+beren5 <- beren3[Naps,]
+head(beren4)
+beren5$start_minute <- beren5$start_minute / 60
+beren5$end_minute <- beren5$end_minute / 60
+beren5$endnap <- beren5$end_hour + beren5$end_minute
+beren5$naplength <- beren5$endnap - beren5$startnap
+totalNaptime<- tapply(beren5$day[Naps], beren5$age[Naps], sum)
+install.packages("paleobioDB", dep = T)
+library(paleobioDB)
+Taxon <- "Dinosauria"
+MinMA <- 66
+MaxMA <- 252
+fossils <- pbdb_occurrences(base_name = Taxon, show = c("phylo", "coords", "ident"), min_ma=MinMA, max_ma=MaxMA)
+Res <- 5
+nspecies	OverTime <- pbdb_richness(fossils , rank = "genus", temporal_extent = c(MaxMA,MinMA), res=Res)
+nspeciesOverTime <- pbdb_richness(fossils , rank = "genus", temporal_extent = c(MaxMA,MinMA), res=Res)
+par(mar=c(4,5,2,1), las=1, tck=-0.01, mgp=c(2.5,0.5,0))
+plot(seq(to=MaxMA, from=MinMA, length.out=nrow(nspeciesOverTime)), nspeciesOverTime[,2], xlim=c(MaxMA, MinMA), type="1", xlab="age (millions of years ago)", ylab="num. of species", main = Taxon)
+plot(seq(to=MaxMA, from=MinMA, length.out=nrow(nspeciesOverTime)), nspeciesOverTime[,2], xlim=c(MaxMA, MinMA), type="l", xlab="age (millions of years ago)", ylab="num. of species", main = Taxon)
+install.packages("iNaturalist", dep = T)
+library(iNaturalst)
+library(iNaturalist)
+setwd(~/Desktop/Evolution/Programming/Tasks/Task.02)
+install.packages("iNaturalist", dep = T)
+install.packages("eBird", dep = T)
+setwd("~/Desktop/Evolution/Programming/Task.02")
+setwd("~/Desktop/Evolution/Programming/Task.03")
+library(eBird)
+install.packages("auk", dep = T)
+setwd("~/Desktop/Evolution/Programming/Task.02")
+library(auk)
+setwd('~/Desktop/Evolution/Tasks/Task_04')
+setwd('~/Desktop/Evolution/Programming/Tasks/Task.04')
+trueMean1 <- 5
+trueSD1 <- 5
+population1 <- rnorm(1e6, trueMean1, trueSD1)
+trueMean2 <- 4
+trueSD2 <- 5
+population2 <- rnorm(1e6, trueMean2, trueSD2)
+Size <- 50
+Sample1 <- sample(population1, Size)
+Sample2 <- sample(population2, Size)
+boxplot(Sample1, Sample2)
+source("http://jonsmitchell.com/code/simFxn04.R")
+MatGrandma <- makeFounder("grandma_mom")
+MatGrandpa <- makeFounder("grandpa_mom")
+PatGrandma <- makeFounder("grandma_da")
+PatGrandpa <- makeFounder("grandpa_da")
+Alan <- makeBaby(PatGrandma, PatGrandpa)
+Brenda <- makeBaby(MatGrandma, MatGrandpa)
+Focus <- makeBaby(Brenda, Alan)
+ToMom <- length(grep("mom", Focus))/length(Focus)
+ToMomMom <- length(grep("grandma_mom", Focus))/length(Focus)
+ToMomDad <- length(grep("grandpa_mom", Focus))/length(Focus)
+Sibling_01 <- makeBaby(Brenda, Alan)
+ToSib <- length(intersect(Focus, Sibling_01))/length(Focus)
+ManySiblings <- replicate(1e3, length(intersect(Focus, makeBaby(Brenda, Alan)))/length(Focus))
+quantile(ManySiblings)
+mean(ManySiblings)
+plot(density(ManySiblings), main="", xlab="proportion shared genes")
+}
+HWE(0.5)
+HWE <- function(p)  {
+aa <- p^2
+ab <- 2 * p * (1-p)
+bb <- (1-p)^2
+return(c(aa=aa, ab=ab, bb=bb))
+}
+HWE(0.5)
+plot(1, 1, type="n", xlim=c(0,1), ylim=c(0,1), xlab="freq. allele a", ylab="geno. freq")
+p <- seq(from=0, to=1, by= 0.01)
+GenoFreq <- t(sapply(p, HWE))
+lines(p, GenoFreq[,"aa"], lwd=2, col="red")
+lines(p, GenoFreq[,"ab"], lwd=2, col="purple")
+lines(p, GenoFreq[,"ab"], lwd=2, col="blue")
+legend("top", legend=c("aa", "ab", "bb"), col=c("red", "purple","blue"), lty=1, lwd=2, bty="n")
+Pop <- simPop(500)
+points(Pop[, "freqa"], Pop[, "Genotypes.aa"]/500, pch=21, bg="red")
+setwd('~/Desktop/Evolution/Programming/Tasks/Task.04')
+trueMean1 <- 5
+trueSD1 <- 5
+population1 <- rnorm(1e6, trueMean1, trueSD1)
+trueMean2 <- 4
+trueSD2 <- 5
+population2 <- rnorm(1e6, trueMean2, trueSD2)
+Size <- 50
+Sample1 <- sample(population1, Size)
+Sample2 <- sample(population2, Size)
+boxplot(Sample1, Sample2)
+source("http://jonsmitchell.com/code/simFxn04.R")
+MatGrandma <- makeFounder("grandma_mom")
+MatGrandpa <- makeFounder("grandpa_mom")
+PatGrandma <- makeFounder("grandma_da")
+PatGrandpa <- makeFounder("grandpa_da")
+Alan <- makeBaby(PatGrandma, PatGrandpa)
+Brenda <- makeBaby(MatGrandma, MatGrandpa)
+Focus <- makeBaby(Brenda, Alan)
+ToMom <- length(grep("mom", Focus))/length(Focus)
+ToMomMom <- length(grep("grandma_mom", Focus))/length(Focus)
+ToMomDad <- length(grep("grandpa_mom", Focus))/length(Focus)
+Sibling_01 <- makeBaby(Brenda, Alan)
+ToSib <- length(intersect(Focus, Sibling_01))/length(Focus)
+ManySiblings <- replicate(1e3, length(intersect(Focus, makeBaby(Brenda, Alan)))/length(Focus))
+quantile(ManySiblings)
+mean(ManySiblings)
+plot(density(ManySiblings), main="", xlab="proportion shared genes")
+}
+HWE <- function(p)  { #
+	aa <- p^2#
+	ab <- 2 * p * (1-p)#
+	bb <- (1-p)^2#
+	return(c(aa=aa, ab=ab, bb=bb))#
+	}
+HWE(0.5)
+plot(1, 1, type="n", xlim=c(0,1), ylim=c(0,1), xlab="freq. allele a", ylab="geno. freq")
+p <- seq(from=0, to=1, by= 0.01)
+GenoFreq <- t(sapply(p, HWE))
+lines(p, GenoFreq[,"aa"], lwd=2, col="red")
+lines(p, GenoFreq[,"ab"], lwd=2, col="purple")
+lines(p, GenoFreq[,"ab"], lwd=2, col="blue")
+legend("top", legend=c("aa", "ab", "bb"), col=c("red", "purple","blue"), lty=1, lwd=2, bty="n")
+Pop <- simPop(500)
+points(Pop[, "freqa"], Pop[, "Genotypes.aa"]/500, pch=21, bg="red")
+Pop <- simPop(50)
+points(Pop[,"freqa"], Pop[,"Genotypes.aa"]/500, pch=22, bg="red")
+install.packages("learnPopGen", dep=T)
+library(learnPopGen)
+x <- genetic.drift(Ne=200, nrep=5, pause=0.01)
+PopSizes <- 5:50
+Samples <- rep(PopSizes, 5)
+tExt <- sapply(Samples, function(x) nrow(simPop(x, 500)))
+Line <- lm(tExt ~ Samples)
+summary(Line)
+Line <- lm(tExt ~ Samples)
+Line$coef
+plot(Samples, tExt)
+abline(Line)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_04')
+trueMean1 <- 5
+trueSD1 <- 5
+population1 <- rnorm(1e6, trueMean1, trueSD1)
+trueMean2 <- 4
+trueSD2 <- 5
+population2 <- rnorm(1e6, trueMean2, trueSD2)
+Size <- 50
+Sample1 <- sample(population1, Size)
+Sample2 <- sample(population2, Size)
+boxplot(Sample1, Sample2)
+source("http://jonsmitchell.com/code/simFxn04.R")
+MatGrandma <- makeFounder("grandma_mom")
+MatGrandpa <- makeFounder("grandpa_mom")
+PatGrandma <- makeFounder("grandma_da")
+PatGrandpa <- makeFounder("grandpa_da")
+head(MatGrandma)
+Alan <- makeBaby(PatGrandma, PatGrandpa)
+Brenda <- makeBaby(MatGrandma, MatGrandpa)
+Focus <- makeBaby(Brenda, Alan)
+head(Focus)
+grep(Focus)
+ToMom <- length(grep("mom", Focus))/length(Focus)
+ToMomMom <- length(grep("grandma_mom", Focus))/length(Focus)
+ToMomDad <- length(grep("grandpa_mom", Focus))/length(Focus)
+head(ToMom)
+head(ToMomMom)
+head(ToMomDad)
+Sibling_01 <- makeBaby(Brenda, Alan)
+ToSib <- length(intersect(Focus, Sibling_01))/length(Focus)
+head(ToSib)
+ManySiblings <- replicate(1e3, length(intersect(Focus, makeBaby(Brenda, Alan)))/length(Focus))
+head(ManySiblings)
+quantile(ManySiblings)
+mean(ManySiblings)
+plot(density(ManySiblings), main="", xlab="proportion shared genes")
+}
+HWE <- function(p)  { #
+	aa <- p^2#
+	ab <- 2 * p * (1 - p)#
+	bb <- (1 - p)^2#
+	return(c(aa=aa, ab=ab, bb=bb))#
+	}
+HWE(0.5)
+plot(1, 1, type="n", xlim=c(0,1), ylim=c(0,1), xlab="freq. allele a", ylab="geno. freq")
+p <- seq(from=0, to=1, by= 0.01)
+GenoFreq <- t(sapply(p, HWE))
+lines(p, GenoFreq[,"aa"], lwd=2, col="red")
+lines(p, GenoFreq[,"ab"], lwd=2, col="purple")
+lines(p, GenoFreq[,"ab"], lwd=2, col="blue")
+legend("top", legend=c("aa", "ab", "bb"), col=c("red", "purple","blue"), lty=1, lwd=2, bty="n")
+Pop <- simPop(500)
+points(Pop[, "freqa"], Pop[, "Genotypes.aa"]/500, pch=21, bg="red")
+Pop <- simPop(50)
+points(Pop[,"freqa"], Pop[,"Genotypes.aa"]/500, pch=22, bg="red")
+install.packages("learnPopGen", dep=T)
+library(learnPopGen)
+x <- genetic.drift(Ne=200, nrep=5, pause=0.01)
+PopSizes <- 5:50
+Samples <- rep(PopSizes, 5)
+tExt <- sapply(Samples, function(x) nrow(simPop(x, 500)))
+Line <- lm(tExt ~ Samples)
+summary(Line)
+Line$coef
+Line2 <- lm( tExt~Samples + 0)
+summary(Line2)
+plot(Samples, tExt)
+abline(Line)
