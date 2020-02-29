@@ -1,0 +1,5 @@
+setwd('~/Desktop/Evolution/Programming/Tasks/Project')
+read.scv(HypothesisData)
+read.csv(HypothesisData)
+setwd('~/Desktop/Evolution/Programming/Tasks/Project/Data')
+read.csv(HypothesisData)

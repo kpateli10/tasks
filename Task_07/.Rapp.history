@@ -1,3 +1,56 @@
+my_data
+class(my_data)
+cnames <- c("patient", "age", "weight", "bp", "rating", "test")
+colnames(cnames)
+colnames(my_data) <- cnames
+my_data
+TRUE == TRUE
+(FALSE == TRUE) == FALSE
+6 == 7
+6 < 7
+10 <= 10
+5 != 7
+5 !== 7
+!5 == 7
+FALSE & FALSE
+TRUE & C(TRUE, FALSE, FALSE)
+TRUE & c(TRUE, FALSE, FALSE)
+TRUE && c(TRUE, FALSE, FALSE)
+R]TR]]
+TRUE | c(TRUE, FALSE, FALSE)
+TRUE || c(TRUE, FALSE, FALSE)
+5 > 8 || 6 != 8 && 4 > 3.9
+isTRUE(6 > 4)
+identical('twins', 'twins')
+xor(5 == 6, !TRUE)
+xor(5 == 6, !FALSE)
+ints <- sample(10)
+ints
+ints > 5
+which(ints > 7)
+any(ints < 0)
+all(ints > 0)
+Sys.Date()
+mean(c(2, 4, 5))
+boring_function <- function(x) {x}
+submit()
+boring_function('My first function!')
+boring_function
+my_mean <- function(my_vector)
+sum(my_vector)/ length(my_vector)
+submit()
+sum(my_vector)#
+length(my_vector)#
+sum(my_vector) / length(my_vector)
+submit()
+my_mean <- function(my_vector) {#
+	sum(my_vector) / length(my_vector)#
+}
+submit()
+my_mean <- function(my_vector) {#
+	sum(my_vector)/length(my_vector)#
+}
+submit()
 sum(my_vector)/length(my_vector)
 submit()
 my_mean <- function(my_vector) {}
@@ -202,204 +255,50 @@ setwd("~/Desktop/Evolution/Programming/Task.02")
 library(auk)
 source("http://jonmitchell.com/code/fxn05.R")
 source("http://jonsmitchell.com/code/simFxn05.R")
-setwd('~/Desktop/Evolution/Programming/Tasks/Task_06')
-library("learnPopGen")
-install.packages("coala")
-install.packages("phytools")
-library("coala")
-install.packages("ape")
-install.packages("maps")
-library("phytools")
-model<- coal_model(sample_size=5, loci_number=10, loci_length=500, ploidy=2)+#
-feat_mutation(10)+#
-feat_recombination(10)+#
-sumstat_trees()+#
-sumstat_nucleotide_div()
-stats <- simulate(model, nsim=1)
-Diversity<- stats$pi
-Nloci <- length(stats$trees)
-t1<- read.tree(text=stats$trees[[1]][1])
-plot(t1)
-axisPhylo()
-t1<- read.tree(text=stats$trees[[1]][1])#
-plot(t1)#
-axisPhylo()
-Angel<- max(nodeHeights(t1))
-t2<- read.tree(text=stats$trees[[2]][1])
-plot(t2)
-axisPhylo()
-t2<- read.tree(text=stats$trees[[2]][1])#
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_07')
+source("http://jonsmitchell/code/simFxn.R")
+source("http://jonsmitchell.com/code.reformatData07.R")
+source("http://jonsmitchell/code/simFxn.R")
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_07')
+source("http://jonsmitchell/code/simFxn.R")
+source("http://jonsmitchell.com/code/reformatData07.R")
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_07')#
+source("http://jonsmitchell.com/code/simFxn.R")#
 #
-plot(t2)#
-axisPhylo()
-par(mfrow=c(1,2))
-plot(t1)
-axisPhylo()
-par(mfrow=c(1,2))#
-plot(t1)#
-axisPhylo()#
-plot(t2)#
-axis(Phylo)
-compare.chronograms(t1,t2)
-t1_1<- read.tree(text=stats$trees[[1]][1])
-par(mfrow=c(1,2))#
-plot(t1)#
-axisPhylo()#
-plot(t2)#
-axis(Phylo)
-par(mfrow=c(1,2))#
-plot(t1)#
-axisPhylo()#
-plot(t2)#
-axisPhylo()
-compare.chronograms(t1,t2)
-t1_1<- read.tree(text=stats$trees[[1]][1])
-t1_2<- read.tree(text=stats$trees[[1]][2])
-compare.chronograms(t1_1, t1_2)
-for(locus in 1:Nloci) {#
-	ntrees <- length(stats$trees[[locus]])#
-	for(n in 1:ntrees) { #
-		if(locus==1&& n==1) {#
-			outPhy <- read.tree(text=stats$trees[[locus]][n])#
-			}#
-			else {#
-			outPhy <- ape:::c.phylo( outPhy, read.tree(text=stats$trees[[locus]][n]))#
-			}#
-			}#
-			}
-setwd('~/Desktop/Evolution/Programming/Tasks/Task_06')#
-library("learnPopGen")#
-install.packages("coala")#
-install.packages("phytools")#
-library("coala")#
-install.packages("ape")#
-install.packages("maps")#
-library("phytools")#
+source("http://jonsmitchell.com/code/reformatData07.R")#
 #
-model<- coal_model(sample_size=5, loci_number=10, loci_length=500, ploidy=2)+#
-feat_mutation(10)+#
-feat_recombination(10)+#
-sumstat_trees()+#
-sumstat_nucleotide_div()#
+plot(1, 1, type="n", xlim=c(1998, 2013), ylim=c(0, 1))#
+s <- apply(overallFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0,0.1)))
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_07')
+source("http://jonsmitchell.com/code/simFxn.R")
+source("http://jonsmitchell.com/code/reformatData07.R")
+plot(1, 1, type="n", xlim=c(1998, 2013), ylim=c(0, 1))
+plot(1, 1, type="n", xlim=c(1998, 2013), ylim=c(0, 1))
+s <- apply(overallFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0,0.1)))
+rescaleFreq <- apply(overallFreq[,3:ncol(overallFreq)], 2, function(x) x-x[1])
+plot(1, 1, type="n", xlim=c(1998, 2013), ylim=c(-0.25, 0.25))
+s <- apply(rescaleFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0.01)))
+smoothScatter(alleleFreq$year, alleleFreqs$rfreq, colramp = Pal, nbin= 100)
+smoothScatter(alleleFreqs$year, alleleFreqs$rfreq, colramp = Pal, nbin= 100)
+smoothScatter(alleleFreqs$year, alleleFreqs$rfreq, colramp = Pal, nbin=100, xlab="year", ylab="change in allele freq. since 1998")
+addFit(nruns = 50, n = 100, ngens = 18, startT = 1997, simCol = "gray40", rescale = TRUE)
+plot(alleleFreqs$d_freq, alleleFreqs$d_imm, xlim=c(-0.15, 0.15), xlab="overall freq. change", ylab="freq. change in subset")
+points(alleleFreqs$d_freq, alleleFreqs$d_birth, col='blue')
+points(alleleFreqs$d_freq, alleleFreqs$d_surv, col='red')
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_07')#
+source("http://jonsmitchell.com/code/simFxn.R")#
 #
-stats <- simulate(model, nsim=1)#
+source("http://jonsmitchell.com/code/reformatData07.R")#
 #
-Diversity<- stats$pi#
+plot(1, 1, type="n", xlim=c(1998, 2013), ylim=c(0, 1))#
+s <- apply(overallFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0,0.1)))#
+rescaleFreq <- apply(overallFreq[,3:ncol(overallFreq)], 2, function(x) x-x[1])#
+plot(1, 1, type="n", xlim=c(1998, 2013), ylim=c(-0.25, 0.25))#
+s <- apply(rescaleFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0.01)))#
+smoothScatter(alleleFreqs$year, alleleFreqs$rfreq, colramp = Pal, nbin= 100)#
+smoothScatter(alleleFreqs$year, alleleFreqs$rfreq, colramp = Pal, nbin=100, xlab="year", ylab="change in allele freq. since 1998")#
+addFit(nruns = 50, n = 100, ngens = 18, startT = 1997, simCol = "gray40", rescale = TRUE)#
 #
-Nloci <- length(stats$trees)#
-#
-t1<- read.tree(text=stats$trees[[1]][1])#
-plot(t1)#
-axisPhylo()#
-#
-Angel<- max(nodeHeights(t1))#
-#
-t2<- read.tree(text=stats$trees[[2]][1])#
-#
-plot(t2)#
-axisPhylo()#
-#
-#Q7 they do not match#
-par(mfrow=c(1,2))#
-plot(t1)#
-axisPhylo()#
-plot(t2)#
-axisPhylo()#
-#
-compare.chronograms(t1,t2)#
-#
-t1_1<- read.tree(text=stats$trees[[1]][1])#
-t1_2<- read.tree(text=stats$trees[[1]][2])#
-compare.chronograms(t1_1, t1_2)#
-#
-for(locus in 1:Nloci) {#
-	ntrees <- length(stats$trees[[locus]])#
-	for(n in 1:ntrees) { #
-		if(locus==1&& n==1) {#
-			outPhy <- read.tree(text=stats$trees[[locus]][n])#
-			}#
-			else {#
-			outPhy <- ape:::c.phylo( outPhy, read.tree(text=stats$trees[[locus]][n]))#
-			}#
-			}#
-			}#
-par(mfrow=c(1,1))#
-densityTree(outPhy)#
-model3 <-coal_model(10, 50)+#
-	feat_mutation(par_prior("theta", sample.int(100, 1)))+#
-	sumstat_nucleotide_div()#
-stats <- simulate(model3, nsim=40)	#
-#
-mean<- sapply(stats, function(x) mean(x$pi))#
-theta <- sapply(stats, function(x) x$pars[["theta"]])
-mean_pi<- sapply(stats, function(x) mean(x$pi))
-theta <- sapply(stats, function(x) x$pars[["theta"]])
-plot(mean_pi)
-plot(theta)
-compare.plot(mean_pi, theta)
-compare.chronograms(mean_pi, theta)
-setwd('~/Desktop/Evolution/Programming/Tasks/Task_06')#
-library("learnPopGen")#
-install.packages("coala")#
-install.packages("phytools")#
-library("coala")#
-install.packages("ape")#
-install.packages("maps")#
-library("phytools")
-coalescent.plot()
-coalescent.plot(n=12, ngen=50, colors=NULL)
-coalescent.plot(n=3, ngen=50, colors=NULL)
-coalescent.plot(n=15, ngen=50, colors=NULL)
-coalescent.plot(n=12, ngen=50, colors=NULL)
-coalescent.plot(n=30, ngen=50, colors=NULL)
-model<- coal_model(sample_size=5, loci_number=10, loci_length=500, ploidy=2)+#
-feat_mutation(10)+#
-feat_recombination(10)+#
-sumstat_trees()+#
-sumstat_nucleotide_div()
-stats <- simulate(model, nsim=1)
-Diversity<- stats$pi
-Nloci <- length(stats$trees)
-t1<- read.tree(text=stats$trees[[1]][1])
-plot(t1)
-axisPhylo()
-Angel<- max(nodeHeights(t1))
-t2<- read.tree(text=stats$trees[[2]][1])
-plot(t2)
-axisPhylo()
-par(mfrow=c(1,2))
-plot(t1)
-axisPhylo()
-plot(t2)
-axisPhylo()
-compare.chronograms(t1,t2)
-t1_1<- read.tree(text=stats$trees[[1]][1])#
-t1_2<- read.tree(text=stats$trees[[1]][2])#
-compare.chronograms(t1_1, t1_2)
-for(locus in 1:Nloci) {#
-	ntrees <- length(stats$trees[[locus]])#
-	for(n in 1:ntrees) { #
-		if(locus==1&& n==1) {#
-			outPhy <- read.tree(text=stats$trees[[locus]][n])#
-			}#
-			else {#
-			outPhy <- ape:::c.phylo( outPhy, read.tree(text=stats$trees[[locus]][n]))#
-			}#
-			}#
-			}
-par(mfrow=c(1,1))#
-densityTree(outPhy)
-par(mfrow=c(1,1))#
-densityTree(outPhy)#
-model3 <-coal_model(10, 50)+#
-	feat_mutation(par_prior("theta", sample.int(100, 1)))+#
-	sumstat_nucleotide_div()#
-stats <- simulate(model3, nsim=40)	#
-#
-mean_pi<- sapply(stats, function(x) mean(x$pi))#
-theta <- sapply(stats, function(x) x$pars[["theta"]])#
-plot(mean_pi)#
-plot(theta)
-plot(mean_pi,theta)
-abline(lm(mean_pi ~ theta))
-coalescent.plot(n=40, ngen=50, colors=NULL)
+plot(alleleFreqs$d_freq, alleleFreqs$d_imm, xlim=c(-0.15, 0.15), xlab="overall freq. change", ylab="freq. change in subset")#
+points(alleleFreqs$d_freq, alleleFreqs$d_birth, col='blue')#
+points(alleleFreqs$d_freq, alleleFreqs$d_surv, col='red')
