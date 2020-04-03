@@ -1,3 +1,31 @@
+TRUE || c(TRUE, FALSE, FALSE)
+5 > 8 || 6 != 8 && 4 > 3.9
+isTRUE(6 > 4)
+identical('twins', 'twins')
+xor(5 == 6, !TRUE)
+xor(5 == 6, !FALSE)
+ints <- sample(10)
+ints
+ints > 5
+which(ints > 7)
+any(ints < 0)
+all(ints > 0)
+Sys.Date()
+mean(c(2, 4, 5))
+boring_function <- function(x) {x}
+submit()
+boring_function('My first function!')
+boring_function
+my_mean <- function(my_vector)
+sum(my_vector)/ length(my_vector)
+submit()
+sum(my_vector)#
+length(my_vector)#
+sum(my_vector) / length(my_vector)
+submit()
+my_mean <- function(my_vector) {#
+	sum(my_vector) / length(my_vector)#
+}
 submit()
 my_mean <- function(my_vector) {#
 	sum(my_vector)/length(my_vector)#
@@ -207,88 +235,57 @@ setwd("~/Desktop/Evolution/Programming/Task.02")
 library(auk)
 source("http://jonmitchell.com/code/fxn05.R")
 source("http://jonsmitchell.com/code/simFxn05.R")
-setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')
-read.csv("states.csv", stringsAsFactors = FALSE)
-catData <- read.csv(file= 'Hypothesis.Data.csv')
-head(catData)
-dim(catData)
-setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')
-catData <- read.csv(file= 'Hypothesis.Data.csv')
-head(catData)
-dim(catData)
-ylim = c(0, 40))
-barplot(Hypothesis.Data$change, ylim = c(0, 40))
-barplot(catData$change, ylim = c(0, 40))
-ylim = c(0, 40))
-barplot(catData$change,#
- ylim = c(0, 40))
-barplot(catData$change)
-setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
-catData <- read.csv(file= 'Hypothesis.Data.csv')#
-head(catData)#
-dim(catData)
-barplot(catData)
-length(catData)
-nrow(catData)
-ncol(catData)
-colnames(catData)
-DomCat <- which(Data == "Domestic.cat")
-WildCat <- which(Data == "Wildcat")
-head(DomCat)
-head(WildCat)
-Bodypart <- which(Data == "X")
-barplot(DomCat ~ WildCat, xlab= "body part", ylab= "Species")
-setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
-catData <- read.csv(file= 'Hypothesis.Data.csv')#
-head(catData)#
-dim(catData)#
+setwd('~/Desktop/Evolution/ProgrammingTasks/Task_08')
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_08')
+library(maps)
+library(ape)
+library(phytools)
+text.string <- "(((((((cow, pig), whale),(bat,(lemur, human))),(robin, iguana)), coelacanth), (gold_fish, trout)),shark);"
+vert.tree <- read.tree(text=text.string)
+plot(vert.tree, edge.width=2)
+nodelabels(frame="circle", bg='white', cex=1)
+text.string <- "(((((((cow, pig), whale),(bat,(lemur, human))),(robin, iguana)), coelacanth), (gold_fish, trout)),shark);"#
+vert.tree <- read.tree(text=text.string)#
+plot(vert.tree, edge.width=2)#
 #
-length(catData)#
-nrow(catData)#
-ncol(catData)#
-colnames(catData)#
-DomCat <- which(Data == "Domestic.cat")#
-WildCat <- which(Data == "Wildcat")#
-Bodypart <- which(Data == "X")#
-barplot(DomCat ~ WildCat, xlab= "body part", ylab= "Species")
-setwd("~/Desktop/Evolution/Programming/Task.02")
-setwd("~/Desktop/Evolution/Programming/Tasks/Task.02")
-Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)
-length(Data)
-nrow(Data)
-ncol(Data)
-colnames(Data)
-head(Data)
-Data[1,]
-Data[2,]
-Data[1:3,]
-Data[1:5, 1:3]
-Feeds <- which(Data[,9] == "bottle")
-berenMilk <- Data[Feeds,]
-head(berenMilk)
-Feeds <- which(Data[, "event"] == "bottle")
-Feeds <- which(Data$event == "bottle")
-dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))
-dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")
-Data$age <- dateID - dateID[which(Data$event =="birth")]
-head(Data)
-beren2 <- Data
-beren3 <- beren2[order(beren2$age),]
-write.csv(beren3, "beren_new.csv", quote=F, row.names=FALSE)
-Feeds <- which(beren3$event == "bottle")
-avgMilk <- mean(beren3$value[Feeds])
-avgFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], mean)
-varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var)
-totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum)
-numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)
-cor(beren3$value[Feeds], beren3$age[Feeds])
-cor.test(beren3$value[Feeds], beren3$age[Feeds])
-berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])
-summary(berenCor)
-berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])
-boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)" )
-par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck= -0.01)
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
-abline(h=mean(totalFeed),lty=2, col='red')
-pdf("r02b-totalMilkByDay.pdf", height = 4, width = 4)
-par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5, 0), tck=-0.01)
+nodelabels(frame="circle", bg='white', cex=1)
+vert.tree
+str(vert.tree)
+tree <- read.tree(text="(((A,B),(C,D)),E);")
+plotTree(tree, offset=1)
+tiplabels(frame="circle", bg='lightblue',cex=1)
+nodelabels(frame="circle",bg='white', cex=1)
+tree <- read.tree(text="(((A,B),(C,D)),E);")#
+plotTree(tree, offset=1)#
+tiplabels(frame="circle", bg='lightblue',cex=1)#
+nodelabels(frame="circle",bg='white', cex=1)
+tree$tip.label
+tree$edge
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/anolis.tre"))
+par(las=1)
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/anolis.tre"))#
+#
+par(las=1)
+hist(AnolisTree$edge.length, col='black', border='white', main="", xlab="edge lengths for the Anolis tree", ylim=c(0,50),xlim=c(0,6))
+tipEdges <- which(AnolisTree$edge[,2]<=Ntip(AnolisTree))
+Lengths <- AnolisTree$edge.length
+names(Lengths)<- AnolisTree$tip.label
+names(Lengths)[which(Lengths == min(Lengths))]
+?plot.phylo
+plot(AnolisTree, cex=0.25)
+Labs <-sapply(AnolisTree$edge.length, round, digits=2)
+edgelabels(text=Labs, cex=0.25)
+plotTree(AnolisTree, offset=1)
+edgelabels(text=NULL, cex=0.25)
+plot(AnolisTree, type="fan")
+plot(AnolisTree, type="circle")
+plot(AnolisTree, type="fan")
+plot(AnolisTree,cex=0.25,tip.color='red')
+plotTree(AnolisTree, offset=1)
+plotTree(AnolisTree, offset=1, notip)
+ltt(AnolisTree)
+abline(0,1,lwd=2,col='red',lty=2)
+fit.bd(AnolisTree, rho=0.2)
+?which()
+which(edgelength)
+which$edge

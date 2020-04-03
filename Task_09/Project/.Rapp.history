@@ -1,0 +1,1483 @@
+head(df)
+df <- data.frame(body.parts=c("x"), Cat=c("DC, WC"))
+head(df)
+p<-ggplot(data=df, aes(x=body.parts, y=cats))+ geom_bar(stat="identity")
+p + coord_flip()
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+catData <- read.csv(file= 'Hypothesis.Data.csv')#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+library(ggplot2)#
+#
+x <- catData["X"]#
+head(x)#
+#
+DC <- catData["Domestic.cat"]#
+head(DC)#
+#
+WC <- catData["Wildcat"]#
+head(WC)#
+#
+y<- catData["DC", "WC"]#
+head(y)#
+#
+df <- data.frame(body.parts=c("x"), Cat=c("DC, WC"))#
+head(df)#
+#
+p<-ggplot(data=df, aes(x=body.parts, y=cats))+ geom_bar(stat="identity")#
+#
+p + coord_flip()
+p<-ggplot(data=df, aes(x=body.parts, y=Cats))+ geom_bar(stat="identity")
+p + coord_flip()
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = FALSE)#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)
+library(ggplot2)
+x <- catData["X"]
+head(x)
+DC <- catData["Domestic.cat"]
+x <- catData[1: ,"X"]
+x <- catData[1: "X"]
+x <- catData[1:3, "X"]
+head(x)
+x <- catData[1:50, "X"]
+head(x)
+library(fivethirtyeight)
+library(tidyr)
+library(tibble)
+library(dplyr)
+names(Domestic.cat)
+names(DC)
+head(DC)
+cats_gathered <- Domestic_cat_final %>%#
+	gather(#
+		DC,#
+		WC,#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+cats_gathered <- Hypothesis.Data.csv %>%#
+	gather(#
+		DC,#
+		WC,#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+cats_gathered <- Hypothesis.Data %>%#
+	gather(#
+		DC,#
+		WC,#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = FALSE)#
+head(catData)#
+dim(catData)
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)
+library(ggplot2)#
+library(tidyr)#
+library(tibble)#
+library(dplyr)
+x <- catData["X"]#
+head(x)
+x <- catData["X"]
+x <- catData["V1"]
+head(x)
+DC <- catData["Domestic.cat"]
+DC <- catData["V2"]
+head(DC)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE)
+head(catData)
+dim(catData)
+length(catData)
+nrow(catData)
+ncol(catData)
+colnames(catData)
+library(ggplot2)
+library(tidyr)
+library(tibble)
+library(dplyr)
+x <- catData["x"]
+x <- catData["X"]
+head(x)
+DC <- catData["Domestic.cat"]
+head(DC)
+WC <- catData["Wildcat"]
+head(WC)
+y<- catData["DC", "WC"]
+head(y)
+df <- data.frame(body.parts=c("x"), Cat=c("DC, WC"))
+head(df)
+p<-ggplot(data=df, aes(x=body.parts, y=Cats))+ geom_bar(stat="identity")
+head(p)
+p + coord_flip()
+cats_gathered <- Hypothesis.Data %>%#
+	gather(#
+		DC,#
+		WC,#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+p<-ggplot(data=df, aes(x=body.parts, y=cats))+ geom_bar(stat="identity")#
+head(p)
+p + coord_flip()
+cats_gathered <- Hypothesis.Data %>%#
+	gather(#
+		DC,#
+		WC,#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+cats_gathered <- Hypothesis.Data.csv %>%#
+	gather(#
+		DC,#
+		WC,#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE)#
+head(catData)#
+dim(catData)
+length(catData)
+nrow(catData)
+ncol(catData)
+colnames(catData)
+library(ggplot2)
+library(tidyr)
+library(tibble)
+library(dplyr)
+Hypothesis.data.csv
+cats_gathered <- 'Hypothesis.Data.csv' %>%#
+	gather(#
+		DC,#
+		WC,#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+cats_gathered <- 'Hypothesis.Data.csv' %>%#
+	gather(#
+		"Domestic.cat",#
+		"Wildcat",#
+		Domestic_Cat:Wildcat,#
+		na.rm = TRUE)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE, sep=",")
+head(catData)
+dim(catData)
+length(catData)
+nrow(catData)
+ncol(catData)
+colnames(catData)
+table(catData$GOP)
+table(catData)
+table(catData$GOP)
+df <- read.table(header=TRUE, text="X" "Domestic.cat", "Wildcat", dec=",")
+library(ggplot2)
+library(reshape2)
+df <- read.table(header=TRUE, text="X" "Domestic.cat", "Wildcat", dec=",")
+catData
+df <- read.table(header=TRUE, text="X	Domestic.cat	Wildcat#
+	1          8.73    5.60#
+	2          5.23    6.32#
+	3          4.67    7.21#
+	4          5.92    5.67#
+	5          7.42    8.19#
+	6          5.44    6.40#
+	7          3.60    6.00#
+	8          6.56    6.20#
+	9          4.37    5.78#
+	10        12.10    8.48#
+ 	11         6.23    5.46#
+	12         5.45    8.16#
+	13         7.22    5.19#
+	14         6.38    8.56#
+	15         9.44    1.30#
+	16         3.25    3.70#
+	17         4.24    6.30#
+	18         4.26    5.58#
+	19         4.05    5.15#
+	20         5.03    4.86#
+	21         7.33    5.69#
+	22         9.56    8.70#
+	23         4.39    4.92#
+	24        10.30    7.82#
+	25         7.81    6.78#
+	26        10.20    5.18#
+	27         3.85    5.65#
+	28         5.45    9.50#
+	29         4.68    6.40#
+	30         5.31    5.13#
+	31         7.35    6.33#
+	32         5.45    5.04#
+	33        23.80   18.40#
+	34         8.93   11.20#
+	35         5.63   11.60#
+	36         6.63    6.04#
+	37        28.30   30.40#
+	38         3.50    6.42	#
+	39         5.28    6.33#
+	40         5.42    4.92#
+	41         5.55   12.60#
+	42         6.06    6.90#
+	43         5.19    8.61#
+	44         6.88    7.14#
+	45         5.85    6.12#
+	46         8.53    5.20#
+	47         6.66    8.79#
+	48         6.64    6.50#
+	49         5.06    4.47", dec=",")
+library(reshape2)
+head(df)
+df_long <-melt(df, id.var = "X")
+library(ggplot2)
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable)) +#
+	geom_bar(stat="identity", position="dogde")
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable)) +#
+	geom_bar(stat="identity")
+plot(ggplot)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+library(reshape2)#
+#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+table(catData$GOP)#
+#
+df <- read.table(header=TRUE, text="X	Domestic.cat	Wildcat#
+	1          8.73    5.60#
+	2          5.23    6.32#
+	3          4.67    7.21#
+	4          5.92    5.67#
+	5          7.42    8.19#
+	6          5.44    6.40#
+	7          3.60    6.00#
+	8          6.56    6.20#
+	9          4.37    5.78#
+	10        12.10    8.48#
+ 	11         6.23    5.46#
+	12         5.45    8.16#
+	13         7.22    5.19#
+	14         6.38    8.56#
+	15         9.44    1.30#
+	16         3.25    3.70#
+	17         4.24    6.30#
+	18         4.26    5.58#
+	19         4.05    5.15#
+	20         5.03    4.86#
+	21         7.33    5.69#
+	22         9.56    8.70#
+	23         4.39    4.92#
+	24        10.30    7.82#
+	25         7.81    6.78#
+	26        10.20    5.18#
+	27         3.85    5.65#
+	28         5.45    9.50#
+	29         4.68    6.40#
+	30         5.31    5.13#
+	31         7.35    6.33#
+	32         5.45    5.04#
+	33        23.80   18.40#
+	34         8.93   11.20#
+	35         5.63   11.60#
+	36         6.63    6.04#
+	37        28.30   30.40#
+	38         3.50    6.42	#
+	39         5.28    6.33#
+	40         5.42    4.92#
+	41         5.55   12.60#
+	42         6.06    6.90#
+	43         5.19    8.61#
+	44         6.88    7.14#
+	45         5.85    6.12#
+	46         8.53    5.20#
+	47         6.66    8.79#
+	48         6.64    6.50#
+	49         5.06    4.47", dec=",")#
+library(reshape2)#
+df_long <-melt(df, id.var = "X")#
+#
+library(ggplot2)#
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable)) +#
+	geom_bar(stat="identity")
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, width=4) +#
+	geom_bar(stat="identity")
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, WIDTH=4) +#
+	geom_bar(stat="identity")
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, color="red", size=3) +#
+	geom_bar(stat="identity")
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, color="red", 	size=3) +#
+	geom_bar(stat="identity")
+ggplot(df_long)
+head(df_long)
+p<-ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, 				color="red", size=3) +#
+	geom_bar(stat="identity")
+p + coord_flip()
+p <- ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, 				color="red", size=3) +#
+		geom_bar(stat="identity")
+p + coord_flip()
+p <- ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, 				color="red", size=3) + geom_bar(stat="identity")
+p <- ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, 			color="red", size=3) #
+	+ geom_bar(stat="identity")
+p <- ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, 			color="red", size=3) +#
+	geom_bar(stat="identity")
+p + coord_flip()
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+table(catData$GOP)
+df <- read.table(header=TRUE, text="X	Domestic.cat	Wildcat#
+	1          8.73    5.60#
+	2          5.23    6.32#
+	3          4.67    7.21#
+	4          5.92    5.67#
+	5          7.42    8.19#
+	6          5.44    6.40#
+	7          3.60    6.00#
+	8          6.56    6.20#
+	9          4.37    5.78#
+	10        12.10    8.48#
+ 	11         6.23    5.46#
+	12         5.45    8.16#
+	13         7.22    5.19#
+	14         6.38    8.56#
+	15         9.44    1.30#
+	16         3.25    3.70#
+	17         4.24    6.30#
+	18         4.26    5.58#
+	19         4.05    5.15#
+	20         5.03    4.86#
+	21         7.33    5.69#
+	22         9.56    8.70#
+	23         4.39    4.92#
+	24        10.30    7.82#
+	25         7.81    6.78#
+	26        10.20    5.18#
+	27         3.85    5.65#
+	28         5.45    9.50#
+	29         4.68    6.40#
+	30         5.31    5.13#
+	31         7.35    6.33#
+	32         5.45    5.04#
+	33        23.80   18.40#
+	34         8.93   11.20#
+	35         5.63   11.60#
+	36         6.63    6.04#
+	37        28.30   30.40#
+	38         3.50    6.42	#
+	39         5.28    6.33#
+	40         5.42    4.92#
+	41         5.55   12.60#
+	42         6.06    6.90#
+	43         5.19    8.61#
+	44         6.88    7.14#
+	45         5.85    6.12#
+	46         8.53    5.20#
+	47         6.66    8.79#
+	48         6.64    6.50#
+	49         5.06    4.47", dec=",")
+library(reshape2)
+df_long <-melt(df, id.var = "X")
+Hypothesis.Data.csv
+catData
+X = rownames(catData)
+x
+X
+n.group=nrow(catData)
+n.group
+barplot(catData, legend = X, beside= TRUE)
+barplot(catData, legend = X, beside= TRUE, COL = 1:n.group))
+barplot(catData, legend = X, beside= TRUE, COL = 1:n.group)
+barplot(catData, legend = X, beside= TRUE, col = heat.colors(n.group)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+table(catData$GOP)#
+#
+df <- read.table(header=TRUE, text="X	Domestic.cat	Wildcat#
+	1          8.73    5.60#
+	2          5.23    6.32#
+	3          4.67    7.21#
+	4          5.92    5.67#
+	5          7.42    8.19#
+	6          5.44    6.40#
+	7          3.60    6.00#
+	8          6.56    6.20#
+	9          4.37    5.78#
+	10        12.10    8.48#
+ 	11         6.23    5.46#
+	12         5.45    8.16#
+	13         7.22    5.19#
+	14         6.38    8.56#
+	15         9.44    1.30#
+	16         3.25    3.70#
+	17         4.24    6.30#
+	18         4.26    5.58#
+	19         4.05    5.15#
+	20         5.03    4.86#
+	21         7.33    5.69#
+	22         9.56    8.70#
+	23         4.39    4.92#
+	24        10.30    7.82#
+	25         7.81    6.78#
+	26        10.20    5.18#
+	27         3.85    5.65#
+	28         5.45    9.50#
+	29         4.68    6.40#
+	30         5.31    5.13#
+	31         7.35    6.33#
+	32         5.45    5.04#
+	33        23.80   18.40#
+	34         8.93   11.20#
+	35         5.63   11.60#
+	36         6.63    6.04#
+	37        28.30   30.40#
+	38         3.50    6.42	#
+	39         5.28    6.33#
+	40         5.42    4.92#
+	41         5.55   12.60#
+	42         6.06    6.90#
+	43         5.19    8.61#
+	44         6.88    7.14#
+	45         5.85    6.12#
+	46         8.53    5.20#
+	47         6.66    8.79#
+	48         6.64    6.50#
+	49         5.06    4.47", dec=",")
+library(reshape2)
+df_long <-melt(df, id.var = "X")
+library(ggplot2)#
+ggplot(df_long, aes(x= Cat type, y= coefficient of variationg value, fill=variable, color="red", 	size=3) +#
+	geom_bar(stat="identity")
+catData
+X = rownames(catData)
+X
+n.group=nrow(catData)
+n.group
+barplot(catData, legend = X, beside= TRUE, col = heat.colors(n.group)
+barplot(catData, legend = X, beside= TRUE, col = heat.colors(n.group), main= "Coefficient of variation of part in Domestic cat and Wildcat")
+myTable<-table(myData$Domestic.cat, myData$Wildcat)
+myTable<-table(catData$Domestic.cat, catData$Wildcat)
+myTable
+myTable2 <- prop.table(myTable, 1)
+myTable2
+myTable<-table(cataData$X, catData$Domestic.cat, catData$Wildcat)
+myTable<-table(catData$X, catData$Domestic.cat, catData$Wildcat)
+myTable
+myTable2 <- prop.table(myTable, 1)
+myTable2
+barplot(myTable2, beside=TRUE)
+barplot(myTable2, beside=TRUE, legend= rownames(myTable2))
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+table(catData$GOP)#
+#
+df <- read.table(header=TRUE, text="X	Domestic.cat	Wildcat#
+	1          8.73    5.60#
+	2          5.23    6.32#
+	3          4.67    7.21#
+	4          5.92    5.67#
+	5          7.42    8.19#
+	6          5.44    6.40#
+	7          3.60    6.00#
+	8          6.56    6.20#
+	9          4.37    5.78#
+	10        12.10    8.48#
+ 	11         6.23    5.46#
+	12         5.45    8.16#
+	13         7.22    5.19#
+	14         6.38    8.56#
+	15         9.44    1.30#
+	16         3.25    3.70#
+	17         4.24    6.30#
+	18         4.26    5.58#
+	19         4.05    5.15#
+	20         5.03    4.86#
+	21         7.33    5.69#
+	22         9.56    8.70#
+	23         4.39    4.92#
+	24        10.30    7.82#
+	25         7.81    6.78#
+	26        10.20    5.18#
+	27         3.85    5.65#
+	28         5.45    9.50#
+	29         4.68    6.40#
+	30         5.31    5.13#
+	31         7.35    6.33#
+	32         5.45    5.04#
+	33        23.80   18.40#
+	34         8.93   11.20#
+	35         5.63   11.60#
+	36         6.63    6.04#
+	37        28.30   30.40#
+	38         3.50    6.42	#
+	39         5.28    6.33#
+	40         5.42    4.92#
+	41         5.55   12.60#
+	42         6.06    6.90#
+	43         5.19    8.61#
+	44         6.88    7.14#
+	45         5.85    6.12#
+	46         8.53    5.20#
+	47         6.66    8.79#
+	48         6.64    6.50#
+	49         5.06    4.47", dec=",")
+library(lattice)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+table(catData$GOP)#
+#
+df <- read.table(header=TRUE, text="X	Domestic.cat	Wildcat#
+	1          8.73    5.60#
+	2          5.23    6.32#
+	3          4.67    7.21#
+	4          5.92    5.67#
+	5          7.42    8.19#
+	6          5.44    6.40#
+	7          3.60    6.00#
+	8          6.56    6.20#
+	9          4.37    5.78#
+	10        12.10    8.48#
+ 	11         6.23    5.46#
+	12         5.45    8.16#
+	13         7.22    5.19#
+	14         6.38    8.56#
+	15         9.44    1.30#
+	16         3.25    3.70#
+	17         4.24    6.30#
+	18         4.26    5.58#
+	19         4.05    5.15#
+	20         5.03    4.86#
+	21         7.33    5.69#
+	22         9.56    8.70#
+	23         4.39    4.92#
+	24        10.30    7.82#
+	25         7.81    6.78#
+	26        10.20    5.18#
+	27         3.85    5.65#
+	28         5.45    9.50#
+	29         4.68    6.40#
+	30         5.31    5.13#
+	31         7.35    6.33#
+	32         5.45    5.04#
+	33        23.80   18.40#
+	34         8.93   11.20#
+	35         5.63   11.60#
+	36         6.63    6.04#
+	37        28.30   30.40#
+	38         3.50    6.42	#
+	39         5.28    6.33#
+	40         5.42    4.92#
+	41         5.55   12.60#
+	42         6.06    6.90#
+	43         5.19    8.61#
+	44         6.88    7.14#
+	45         5.85    6.12#
+	46         8.53    5.20#
+	47         6.66    8.79#
+	48         6.64    6.50#
+	49         5.06    4.47", dec=",")#
+library(lattice)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+catData <- read.csv(file= 'Hypothesis.Data.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+table(catData$GOP)#
+#
+df <- read.table(header=TRUE, text="Body.Part	Domestic.cat	Wildcat#
+	1          8.73    5.60#
+	2          5.23    6.32#
+	3          4.67    7.21#
+	4          5.92    5.67#
+	5          7.42    8.19#
+	6          5.44    6.40#
+	7          3.60    6.00#
+	8          6.56    6.20#
+	9          4.37    5.78#
+	10        12.10    8.48#
+ 	11         6.23    5.46#
+	12         5.45    8.16#
+	13         7.22    5.19#
+	14         6.38    8.56#
+	15         9.44    1.30#
+	16         3.25    3.70#
+	17         4.24    6.30#
+	18         4.26    5.58#
+	19         4.05    5.15#
+	20         5.03    4.86#
+	21         7.33    5.69#
+	22         9.56    8.70#
+	23         4.39    4.92#
+	24        10.30    7.82#
+	25         7.81    6.78#
+	26        10.20    5.18#
+	27         3.85    5.65#
+	28         5.45    9.50#
+	29         4.68    6.40#
+	30         5.31    5.13#
+	31         7.35    6.33#
+	32         5.45    5.04#
+	33        23.80   18.40#
+	34         8.93   11.20#
+	35         5.63   11.60#
+	36         6.63    6.04#
+	37        28.30   30.40#
+	38         3.50    6.42	#
+	39         5.28    6.33#
+	40         5.42    4.92#
+	41         5.55   12.60#
+	42         6.06    6.90#
+	43         5.19    8.61#
+	44         6.88    7.14#
+	45         5.85    6.12#
+	46         8.53    5.20#
+	47         6.66    8.79#
+	48         6.64    6.50#
+	49         5.06    4.47", dec=",")#
+library(lattice)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+catData <- read.csv(file= 'Hypothesis.Data.Final.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+table(catData$GOP)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)#
+catData <- read.csv(file= 'Hypothesis.Data.Final.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+library(lattice)
+)
+cat_table <- read.table(text = "catData", header= TRUE, sep= ",")
+cat_table
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species#
+	horiz=TRUE#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species#
+	horizontal=TRUE#
+)
+archart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	horizontal=TRUE#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	horizontal=TRUE#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "comparisson of Cat species Characteristic"#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part"#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	par.settings = list(superpose.polygon = list(col = colors))#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+archart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+ 	groups = Cat.species,#
+ 	main = "Comparisson of Cat species Characteristics",#
+ 	xlab = "Body part",#
+ 	auto.key = TRUE,#
+ 	par.settings = list(superpose.polygon = list(col = colors))#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+ 	groups = Cat.species,#
+ 	main = "Comparisson of Cat species Characteristics",#
+ 	xlab = "Body part",#
+ 	auto.key = TRUE#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE#
+#
+)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+library(ggplot2)
+catData <- read.csv(file= 'Hypothesis.Data.Final.csv', header = TRUE, sep=",")
+catData
+head(catData)
+dim(catData)
+length(catData)
+nrow(catData)
+ncol(catData)
+colnames(catData)
+library(lattice)
+cat_table <- read.table(text = "catData", header= TRUE, sep= ",")
+cat_table
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics"#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part"#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part"#
+	auto.key = TRUE#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	col = rainbow.colors#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	col = heat.colors()#
+#
+)
+colors= c("deeppink1", "darkturquoise")
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+#
+)
+colors= c("deeppink1", "darkturquoise")
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE#
+#
+)#
+#
+colors= c("deeppink1", "darkturquoise")
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')
+library(ggplot2)
+catData <- read.csv(file= 'Hypothesis.Data.Final.csv', header = TRUE, sep=",")
+catData
+head(catData)
+dim(catData)
+length(catData)
+nrow(catData)
+ncol(catData)
+colnames(catData)
+library(lattice)
+cat_table <- read.table(text = "catData", header= TRUE, sep= ",")
+cat_table
+colors= c("deeppink1", "darkturquoise")
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, cex=1, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, cex=0.5, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, cex=0.2, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, cex=0.1, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	list(Coefficient.of.variation ~ Body.Part, #
+	cex=0.5#
+)	#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	list(Coefficient.of.variation ~ Body.Part, #
+	cex=0.5)#
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = "Body part",#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.5#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.2#
+	)#
+),	#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)#
+#
+colors= c("deeppink1", "darkturquoise")
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.2#
+	)#
+),	#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.2,#
+	horizontal= FALSE#
+	)#
+),	#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.2,#
+	horiz= TRUE#
+	)#
+),	#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.2,#
+	horiz= FALSE#
+	)#
+),	#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	horiz= FALSE#
+	)#
+),	#
+	auto.key = TRUE,#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = "Comparisson of Cat species Characteristics",#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	horiz= FALSE#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	horiz= FALSE#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0,#
+	plot(x, t, las =2)#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	horiz= FALSE#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0,#
+	angle=60#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	horiz= FALSE#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0,#
+	angle=90#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	horiz= FALSE#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0,#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	angle=60#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	angle=60#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	angle=60, #
+	hjust=1#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	rot=45#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)
+setwd('~/Desktop/Evolution/Programming/Tasks/Task_09/Project')#
+#
+catData <- read.csv(file= 'Hypothesis.Data.Final.csv', header = TRUE, sep=",")#
+catData#
+head(catData)#
+dim(catData)#
+#
+length(catData)#
+nrow(catData)#
+ncol(catData)#
+colnames(catData)#
+#
+library(lattice)#
+#
+cat_table <- read.table(text = "catData", header= TRUE, sep= ",")#
+cat_table#
+#
+#plot the number in y axis#
+#by the body part#
+#grouped by species#
+#
+colors= c("deeppink1", "darkturquoise")#
+#
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part,#
+	groups = Cat.species,#
+)#
+#
+barchart(#
+	data = catData,#
+	Coefficient.of.variation ~ Body.Part, #
+	groups = Cat.species,#
+	main = list(#
+	label = "Comparisson of Cat species Characteristics",#
+	cex=1.5#
+),#
+	xlab = list(#
+	label = "Body part",#
+	cex= 1.0#
+),	#
+	scales = list(#
+	x=list(#
+	cex=0.5,#
+	rot=45#
+	)#
+),	#
+	auto.key = list(#
+	space = list (space = "top"),#
+	columns = 2#
+),#
+	par.settings = list(superpose.polygon = list(col = colors))#
+#
+)#
+#
+colors= c("deeppink1", "darkturquoise")

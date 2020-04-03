@@ -1,0 +1,101 @@
+Body Part,Cat species,Coefficient of variation
+intestine length (ITL),Domestic Cat,8.73
+intestine length (ITL),Wildcat,5.6
+Cranial volume (CRV),Domestic Cat,5.23
+Cranial volume (CRV),Wildcat,6.23
+cranial index = greatest length of scull : cranial volume (CRI),Domestic Cat,4.67
+cranial index = greatest length of scull : cranial volume (CRI),Wildcat,7.21
+tibia length (TIL),Domestic Cat,5.92
+tibia length (TIL),Wildcat,5.67
+length C1 (C1L),Domestic Cat,7.42
+length C1 (C1L),Wildcat,8.19
+hind foot length (HFL),Domestic Cat,5.44
+hind foot length (HFL),Wildcat,6.4
+greatest length of P4 (P4L),Domestic Cat,3.6
+greatest length of P4 (P4L),Wildcat,6
+facial length (FEL),Domestic Cat,6.56
+facial length (FEL),Wildcat,6.2
+length between mandibular P3 and M1 (PML),Domestic Cat,4.37
+length between mandibular P3 and M1 (PML),Wildcat,5.78
+length of enamel C1 (CLE),Domestic Cat,12.1
+length of enamel C1 (CLE),Wildcat,8.48
+humerus length (HUL),Domestic Cat,6.23
+humerus length (HUL),Wildcat,5.46
+greatest breadth of P4 (P4L),Domestic Cat,5.45
+greatest breadth of P4 (P4L),Wildcat,8.16
+ulna length (ULL),Domestic Cat,7.22
+ulna length (ULL),Wildcat,5.19
+tail length (TAL),Domestic Cat,6.38
+tail length (TAL),Wildcat,8.56
+rood of C1 (C1R),Domestic Cat,9.44
+rood of C1 (C1R),Wildcat,1.3
+greatest width of the braincase,Domestic Cat,3.25
+greatest width of the braincase,Wildcat,3.7
+greatest breadth of the foremen magnum,Domestic Cat,4.24
+greatest breadth of the foremen magnum,Wildcat,6.3
+greatest breadth of the occipital condyles,Domestic Cat,4.26
+greatest breadth of the occipital condyles,Wildcat,5.58
+length between P2 and P4,Domestic Cat,4.05
+length between P2 and P4,Wildcat,5.15
+mastoid breadth,Domestic Cat,5.03
+mastoid breadth,Wildcat,4.86
+zygomatic breadth,Domestic Cat,7.33
+zygomatic breadth,Wildcat,5.69
+head trunk length,Domestic Cat,9.56
+head trunk length,Wildcat,8.7
+least breadth of the postorbital constriction,Domestic Cat,4.39
+least breadth of the postorbital constriction,Wildcat,4.92
+height of ramus,Domestic Cat,10.3
+height of ramus,Wildcat,7.82
+least breadth between the orbits,Domestic Cat,7.81
+least breadth between the orbits,Wildcat,6.78
+maximum width of mandubular condyles,Domestic Cat,10.2
+maximum width of mandubular condyles,Wildcat,5.18
+length between P2 and M1,Domestic Cat,3.85
+length between P2 and M1,Wildcat,5.65
+facial length,Domestic Cat,5.45
+facial length,Wildcat,9.5
+length between C1 and M1,Domestic Cat,4.68
+length between C1 and M1,Wildcat,6.4
+breadth between the infraorbital foramina: lateral length of snout (ISI),Domestic Cat,5.31
+breadth between the infraorbital foramina: lateral length of snout (ISI),Wildcat,5.13
+maximum distance between pogonium and angular process (PAD),Domestic Cat,7.35
+maximum distance between pogonium and angular process (PAD),Wildcat,6.33
+greatest palatal breadth (PAB),Domestic Cat,5.45
+greatest palatal breadth (PAB),Wildcat,5.04
+weight (WGT),Domestic Cat,23.8
+weight (WGT),Wildcat,18.4
+depth of the mandible behind M1 (MDM),Domestic Cat,8.93
+depth of the mandible behind M1 (MDM),Wildcat,11.2
+maximum length of the nassals (NMA),Domestic Cat,5.63
+maximum length of the nassals (NMA),Wildcat,11.6
+maximum distance between pogonium and coronoid process (PCD),Domestic Cat,6.63
+maximum distance between pogonium and coronoid process (PCD),Wildcat,6.04
+width of cranial suture (CSW),Domestic Cat,28.3
+width of cranial suture (CSW),Wildcat,30.4
+length between C1 and M1,Domestic Cat,3.5
+length between C1 and M1,Wildcat,6.42
+condylobasal length (CBL) ,Domestic Cat,5.28
+condylobasal length (CBL) ,Wildcat,6.33
+greatest length of skull (SKL),Domestic Cat,5.42
+greatest length of skull (SKL),Wildcat,4.92
+minimum length of nasals (NMI),Domestic Cat,5.55
+minimum length of nasals (NMI),Wildcat,12.6
+frontal breadth (FRB),Domestic Cat,6.06
+frontal breadth (FRB),Wildcat,6.9
+anteriorposterior diameter of the auditory bulla (ABD),Domestic Cat,5.19
+anteriorposterior diameter of the auditory bulla (ABD),Wildcat,8.61
+rostrum breadth (ROB),Domestic Cat,6.88
+rostrum breadth (ROB),Wildcat,7.14
+breadth between the infraorbital foramina (IFD),Domestic Cat,5.85
+breadth between the infraorbital foramina (IFD),Wildcat,6.12
+maximum width of mandibular P4 (MPW),Domestic Cat,8.53
+maximum width of mandibular P4 (MPW),Wildcat,5.2
+least breadth of the postorbital constriction:least breadth between the orbits (ORI),Domestic Cat,6.66
+least breadth of the postorbital constriction:least breadth between the orbits (ORI),Wildcat,8.79
+lateral length of snout (SNL),Domestic Cat,6.64
+lateral length of snout (SNL),Wildcat,6.5
+greatest palatal breadth: length between P2 and M1 (PMI),Domestic Cat,5.06
+greatest palatal breadth: length between P2 and M1 (PMI),Wildcat,4.47
+greatest palatal breadth: length between P2 and M1 (PMI),Domestic Cat,5.06
+greatest palatal breadth: length between P2 and M1 (PMI),Wildcat,4.47
